@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #F9F9F9;;
+    overflow: visible;
+    font-family: 'Roboto', sans-serif;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 24px;
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    z-index: 1000;
+}
+.left-container, .right-container, .middle-container{
+    display: flex;
+    gap:25px;
+    align-items: center;
+    height: 45px;
+}
+.left-container{
+    flex: 1;
+    justify-content: flex-start;
+}
+.middle-container{
+    flex: 2;
+    justify-content: center;
+}
+.searchbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+button{
+    border: none;
+    cursor: pointer;
+}
+#search-input{
+    width: 30%;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 40px 0 0 40px;
+    padding: 20px;
+}
+#search-button{
+    width: 40px;
+    height: 42px;
+    border: 1px solid #ccc;
+    border-radius: 0 40px 40px 0;
+}
+.right-container{
+    flex: 1;
+    justify-content: flex-end;
+}
+.profile{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: violet;
+}
+main{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 60px;
+    padding-top: 100px;
+}
+.video-container{
+    padding-left: 75px;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 20px;
+    width: 70%;
+}
+.main-video iframe{
+    width: 100%;
+    aspect-ratio: 16/9;
+    border: none;
+}
+.main-video figcaption{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px 0px;
+    color: #000;
+    text-align: left;
+}
+.action-container{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 70px;
+}
+.left-side, .right-side{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 25px;
+    flex: 1;
+}
+.right-side{
+    justify-content: flex-end;
+}
+.left-side{
+    justify-content: flex-start;
+    gap: 50px;
+}
+.channel-info{
+    display: flex;
+    gap: 10px;
+    text-align: left;
+}
+.channel-photo{
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    background: url('../image/ChannelAvatar.png');
+    background-size: cover;
+}
+.subscribe{
+    background-color: red;
+    color: white;
+    height: 40px;
+    width: 170px;
+    border-radius: 40px 40px 40px 40px;
+    border: none;
+}
+.like-dislike{
+    display: flex;
+}
+.like{
+    display: flex;
+    gap: 5px;
+    height: 40px;
+    width: 150px;
+    border-radius: 40px 0px 0px 40px;
+    border: solid 1px #000;
+    align-items: center;
+    justify-content: center;
+}
+span, svg{
+    background-color: transparent;
+}
+.like-dislike span, .share span, .download span, .subscribe span{
+    font-size: 14px;
+    font-weight: 600;
+}
+.dislike{
+    display: flex;
+    height: 40px;
+    width: 60px;
+    border-radius: 0px 40px 40px 0px;
+    border: solid 1px #000;
+    align-items: center;
+    justify-content: center;
+}
+.share, .download{
+    display: flex;
+    gap: 5px;
+    height: 40px;
+    width: 170px;
+    border-radius: 40px 40px 40px 40px;
+    border: solid 1px #000;
+    align-items: center;
+    justify-content: center;
+}
+.subscribe:hover{
+    background-color: #ff000096;
+}
+.like:hover, .dislike:hover, .share:hover, .download:hover{
+    background-color: #e1e1e1;
+}
+.video-status{
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 16px 0px;
+}
+.video-status p{
+    font-size: 14px;
+    font-weight: 600;
+}
+.video-status h3{
+    margin-right: 20px;
+}
+
+.video-description{
+height: auto;
+width: 50%;
+}
+
+.video-description p{
+    background-color: transparent;
+    color: #515151;
+    font-size: 14px;
+    font-weight: 400;
+}
+aside{
+    display: flex;
+    flex-flow: column wrap;
+    width: 30%;
+    height: auto;
+}
+.suggested-videos{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 5px;
+}
+.video{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 10px;
+    align-items: flex-start;
+}
+.video-info{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 2px;
+    width: 100%;
+    font-size: 12px;
+    font-weight: 400;
+    color: #515151;
+}
